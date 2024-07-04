@@ -1,0 +1,58 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#tema">Tema</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#diagnostico">Diagnóstico</a></li>
+        <li><a href="#problema-solucion">Problema y Solución</a></li>
+        <li><a href="#procedimientos">Procedimientos</a></li>
+        <li><a href="#conclusiones">Conclusiones</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <slot></slot>
+  </main>
+</body>
+</html>
+
+<style>
+  header {
+    background-color: var(--header-color);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a:hover {
+    color: var(--primary-color);
+  }
+</style>
