@@ -1,0 +1,79 @@
+/* public/styles.css */
+:root {
+    --background-color: #121212;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --text-color: #ffffff;
+    --heading-color: #ffffff;
+    --footer-color: #1f1f1f;
+    --footer-text-color: #ffffff;
+    --accent-gradient: linear-gradient(45deg, #ff6ec4, #7873f5, #2b91e0);
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    margin: auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  h1, h2, h3 {
+    color: var(--heading-color);
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  p, li {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    background-size: 400%;
+    background-position: 0%;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    p, li {
+      font-size: 1.2rem;
+    }
+  }
+  
